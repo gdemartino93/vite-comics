@@ -77,23 +77,34 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+@use '../styles/partials/variables' as *;
 header{
   max-width: 1300px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-
+  height: 20vh;
  ul{
   display: flex;
   list-style: none;
   gap: 20px;
+  height: 100%;
+  li{
+      display: flex;
+      align-items: center;
+      &:hover{
+        border-bottom: 5px solid $bg-blue;
+      }
+    }
     a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+
+    &:hover{
+      color: $bg-blue;
+    }
     }
  }
 }
