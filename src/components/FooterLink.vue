@@ -5,7 +5,7 @@ export default{
              dcComics : ["Characters", "Comics", "Movies", "TV"],
              Shop : ["Shop DC", "Shop DC Collectibles"],
              DC : ["Terms of Use", "Privacy Policy(New)", "Ad Choices", "Advertising"],
-             Sites : ["dc", "Mad Magazine", "DC Kids"]
+             Sites : ["dc", "Mad Magazine", "DC Kids", "Mad Magazine"]
           
         // footerLinks : [
         //     {
@@ -51,7 +51,8 @@ export default{
             </ul>
         </div>
         <!-- img da fixare -->
-        <!-- <img src="../../public/dc-logo-bg.png" alt=""> -->
+        <div class="imgcontainer"><img src="../../public/dc-logo-bg.png" alt="" class="imgPosition"></div>
+        
         
         
     </div>
@@ -71,10 +72,13 @@ export default{
     max-width: 1300px;
     margin: 0 auto;
     padding: 30px 0;
+    display: flex;
 }
 .footerlink{
-   
+   z-index: 1;
     background-image: url(../../public/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     ul{
         color: white;
         font-weight: bold;
@@ -86,6 +90,14 @@ export default{
             a{
                 color: grey;
             }
+        }
+    }
+    .imgcontainer{
+        position: relative;
+        left: 15%;
+        .imgPosition{
+            position: absolute;
+            top: -30%;
         }
     }
 }

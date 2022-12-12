@@ -31,14 +31,15 @@ export default{
 @use '../styles/partials/variables' as *;
 .social{
     background: #333333;
-
+    z-index: 2;
+    position: relative;
 
     .container{
         max-width: 1300px;
         margin:  0 auto;
         display: flex;
         align-items: center;
-        height: 15vh;
+        height: 17vh;
         justify-content: space-between;
         .btn{
             padding: 10px 10px;

@@ -48,6 +48,8 @@ export default{
     height: 20vh;
     display: flex;
     justify-content: space-around;
+    z-index: 2;
+    position: relative;
     .container{
         max-width: 1300px;
         margin: 0 auto;
