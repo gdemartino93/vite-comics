@@ -82,7 +82,7 @@ export default{
     background-image: url(../../public/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    // overflow: hidden;
+    overflow: hidden;
     ul{
         color: white;
         font-weight: bold;
