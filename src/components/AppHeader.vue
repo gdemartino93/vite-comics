@@ -1,62 +1,65 @@
 <script >
 export default{
-  data(){
-    return{
-      links : [
-        {
-          text : "Characters",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Comics",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Movies",
-          url : "#",
-          current : false
-        },
-        {
-          text : "TV",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Games",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Collectibles",
-          url : "#",
-          current : true
-        },
-        {
-          text : "Videos",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Fans",
-          url : "#",
-          current : false
-        },
-        {
-          text : "News",
-          url : "#",
-          current : false
-        },
-        {
-          text : "Shop",
-          url : "#",
-          current : false
-        },
-
-      ]
-    }
+  props:{
+    links : Array
   }
+  // data(){
+  //   return{
+  //     links : [
+  //       {
+  //         text : "Characters",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Comics",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Movies",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "TV",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Games",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Collectibles",
+  //         url : "#",
+  //         current : true
+  //       },
+  //       {
+  //         text : "Videos",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Fans",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "News",
+  //         url : "#",
+  //         current : false
+  //       },
+  //       {
+  //         text : "Shop",
+  //         url : "#",
+  //         current : false
+  //       },
+
+  //     ]
+  //   }
+  // }
 }
 
 </script>
@@ -79,12 +82,12 @@ export default{
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 header{
+  padding: 15px 0;
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  height: 20vh;
  ul{
   display: flex;
   list-style: none;

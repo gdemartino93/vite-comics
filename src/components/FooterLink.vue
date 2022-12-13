@@ -1,8 +1,11 @@
 <script >
 export default{
+    props : {
+        links : Array
+    },
   data(){
     return{
-             dcComics : ["Characters", "Comics", "Movies", "TV"],
+            //  dcComics : ["Characters", "Comics", "Movies", "TV"],
              Shop : ["Shop DC", "Shop DC Collectibles"],
              DC : ["Terms of Use", "Privacy Policy(New)", "Ad Choices", "Advertising"],
              Sites : ["dc", "Mad Magazine", "DC Kids", "Mad Magazine"]
@@ -27,8 +30,8 @@ export default{
         <div class="link">
             <ul >
                 <span>DC COMICS</span>
-                <li v-for="(title,index) in dcComics" :key="index">
-                    <a href="">{{title}}</a>
+                <li v-for="(title,index) in links" :key="index">
+                    <a href="">{{title.text}}</a>
                 </li>
             </ul>
             <ul >
@@ -79,6 +82,7 @@ export default{
     background-image: url(../../public/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     ul{
         color: white;
         font-weight: bold;
@@ -97,7 +101,8 @@ export default{
         left: 15%;
         .imgPosition{
             position: absolute;
-            top: -30%;
+            top: -18%;
+            height: 140%;
         }
     }
 }
