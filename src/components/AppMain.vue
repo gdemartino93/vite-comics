@@ -93,16 +93,23 @@ export default{
     <main>
         <div class="container">            
             <Item v-for="(item,index) in items" :key="index" :itemVue="item" />
+ 
         </div>   
+        <a href="" class="btnLoad">LOAD MORE</a>
     </main>
 
 </template>
 
 <style lang="scss" scoped>
-
+@use '../styles/partials/variables' as *;
 main{
     background: #222222;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .container{
         display: flex;
         justify-content: center;
@@ -110,6 +117,15 @@ main{
         flex: 1;
         padding: 50px 0;
         
+    }
+    .btnLoad{
+        padding: 10px 10px;
+        background: $bg-blue;
+        width: 150px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin: 0 auto 20px auto;
     }
 }   
 
