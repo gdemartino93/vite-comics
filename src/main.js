@@ -14,6 +14,8 @@ import { faUserSecret,faHouse, faUser, faMagnifyingGlass} from '@fortawesome/fre
 /* add icons to the library */
 library.add(faUserSecret,faHouse,faUser,faMagnifyingGlass )
 
+import 'animate.css';
+
 
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

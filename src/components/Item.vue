@@ -27,6 +27,11 @@ export default{
             width: 200px;
             height: 200px;
             margin: 10px;
+            cursor: pointer;
+            &:hover{
+              animation: flash; /* referring directly to the animation's @keyframe declaration */
+              animation-duration: 2s; /* don't forget to set a duration! */
+            }
             .img{
                 height: 80%;
                 img{
