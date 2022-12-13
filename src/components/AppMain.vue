@@ -1,9 +1,10 @@
 <script >
 import Item from './Item.vue'
+import Jumbotron from './Jumbotron.vue'
 
 export default{
     components : {
-        Item
+        Item, Jumbotron
     },
   data(){
     return{
@@ -88,6 +89,7 @@ export default{
 </script>
 
 <template>
+    <Jumbotron />
     <main>
         <div class="container">            
             <Item v-for="(item,index) in items" :key="index" :itemVue="item" />
@@ -99,16 +101,14 @@ export default{
 <style lang="scss" scoped>
 
 main{
-    background: black;
+    background: #222222;
     color: white;
-    font-weight: bold;
-    font-size: 30px;
     .container{
-        max-width: 1300px;
-        margin: 0 auto;
         display: flex;
-        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
+        flex: 1;
+        padding: 50px 0;
         
     }
 }   

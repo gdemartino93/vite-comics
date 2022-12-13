@@ -17,7 +17,7 @@ export default{
                 <div class="img">
                   <img :src="itemVue.thumb" alt="">
                 </div>
-                <div class="text">{{itemVue.series}}</div>
+                <div class="text">{{itemVue.series.toUpperCase()}}</div>
     </div>
 </template>
 
@@ -26,15 +26,18 @@ export default{
 .item{
             width: 200px;
             height: 200px;
-            border: 1px solid red;
+            margin: 10px;
             .img{
-                background:pink;
                 height: 80%;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
             }
             .text{
-                background: yellow;
                 height: 20%;
-                color: black;
+                font-size: 15px;
+                margin-top: 20px;
             }
         }
 </style>
