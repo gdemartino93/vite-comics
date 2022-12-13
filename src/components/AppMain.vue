@@ -126,6 +126,12 @@ main{
         color: white;
         font-weight: bold;
         margin: 0 auto 20px auto;
+        &:hover{
+            opacity: 0.5;
+            background: white;
+            color: black;
+            transition: .5s ease-in-out;
+        }
     }
 }   
 

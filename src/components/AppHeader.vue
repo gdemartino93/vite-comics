@@ -36,7 +36,9 @@ header{
   display: flex;
   list-style: none;
   gap: 20px;
-  height: 100%;
+
+  // problema con hover
+  height: 137%;
   li{
       display: flex;
       align-items: center;
